@@ -1,19 +1,3 @@
-# from flask import Flask, render_template, request
-
-# app = Flask(__name__, static_folder="static")
-
-# @app.route('/', methods=['GET', 'POST'])
-# def calendar ():
-#   if request.method == "GET":
-#     return render_template('index.html')
-
-#   print(request.form)
-#   return render_template('index.html')
-
-
-# app.run(debug=True)
-
-
 from flask import Flask, request, render_template, jsonify
 from flask_restful import Api, Resource, reqparse
 from peewee import (SqliteDatabase, Model, CharField)
